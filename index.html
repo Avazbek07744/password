@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Turi O'zgarishi</title>
+</head>
+<body>
+
+<form id="myForm">
+  <input type="password" id="myInput" value="">
+  <button type="button" id="myButton" onclick="InputType()">Ko`z</button>
+  <button type="button" id="myButton">jo`natish</button>
+</form>
+
+<script>
+function InputType() {
+  var input = document.getElementById('myInput');
+  var changeTypeButton = document.getElementById('myButton');
+
+  if (input.type === 'password') {
+    input.type = 'text';
+    changeTypeButton.textContent = 'Ko`z';
+  } else {
+    input.type = 'password';
+    changeTypeButton.textContent = 'Ko`z';
+  }
+}
+</script>
+
+</body>
+</html>
